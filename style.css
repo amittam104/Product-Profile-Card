@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* font-family: "Fraunces", serif; */
   font-weight: 400;
   line-height: 1;
   background-color: #f2ebe3;
@@ -25,12 +24,84 @@ main {
 }
 
 .container {
-  max-width: 80rem;
-
-  background-color: #fff;
+  max-width: 60rem;
   display: flex;
 }
 
+/* Image */
+
 .img {
+  overflow: hidden;
+  border-radius: 1.2rem 0 0 1.2rem;
   max-width: 100%;
+}
+
+/* Product Info */
+.product-info {
+  width: 100%;
+  padding: 3.2rem 3rem 3.2rem 3rem;
+  background-color: #fff;
+  border-radius: 0 1.2rem 1.2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sub-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(108, 114, 137, 0.5);
+  letter-spacing: 5px;
+  margin-bottom: 2.6rem;
+}
+.header {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+}
+.info {
+  font-size: 1.5rem;
+  color: #6c7289;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.discount-price {
+  font-family: "Fraunces", serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.actual-price {
+  color: rgba(108, 114, 137);
+  font-size: 1.4rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+}
+
+.btn-text {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
